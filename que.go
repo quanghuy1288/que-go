@@ -39,7 +39,7 @@ type Job struct {
 
 	// LastError is the error message or stack trace from the last time the job
 	// failed. It is ignored on job creation.
-	LastError pgx.NullString
+	LastError pgx.Text
 
 	mu      sync.Mutex
 	deleted bool
